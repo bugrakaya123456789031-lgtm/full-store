@@ -20,15 +20,18 @@ C_SRC      := $(shell find $(SRCDIR) -name '*.c')
 OBJS       := $(CPP_SRC:$(SRCDIR)/%.cpp=$(BUILDDIR)/%.o) \
               $(C_SRC:$(SRCDIR)/%.c=$(BUILDDIR)/%.o)
 
-PORT_LIBS  := -lcurl -lmbedtls -lmbedx509 -lmbedcrypto \
+PORT_LIBS  := -L$(PS5_SYSROOT)/user/homebrew/lib \
+              -lcurl -lmbedtls -lmbedx509 -lmbedcrypto \
               -larchive -lz -lbz2 -llzma -lzstd \
               -lSDL2 -lSDL2_ttf -lSDL2_image -lfreetype -lpng -ljpeg
 
-CPPFLAGS   += -I$(INCDIR) \
+CPPFLAGS   += -I$(INCDIR) -I$(SRCDIR) \
+              -I$(PS5_SYSROOT)/user/homebrew/include \
+              -I$(PS5_SYSROOT)/user/homebrew/include/SDL2 \
               -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"'
 
 CXXFLAGS   += -std=c++17 -Wall -Wextra -Wno-unused-parameter \
-              -fno-rtti -fno-exceptions -O2 -g
+              -O2 -g
 
 CFLAGS     += -std=c11 -Wall -Wextra -O2 -g
 
