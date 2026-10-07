@@ -10,10 +10,14 @@ on:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install build tools
         run: |
@@ -51,6 +55,16 @@ jobs:
             exit 1
           fi
 
+      - name: Publish log to branch
+        if: always()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B build-logs
+          git add -f make.log
+          git commit -m "build log [skip ci]" || true
+          git push -f origin build-logs || true
+
       - name: Upload Build Log
         if: always()
         uses: actions/upload-artifact@v4
@@ -64,3 +78,4 @@ jobs:
         with:
           name: full-store-elf
           path: full-store.elf
+
