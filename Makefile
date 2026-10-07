@@ -35,7 +35,7 @@ CXXFLAGS   += -std=c++17 -Wall -Wextra -Wno-unused-parameter \
 
 CFLAGS     += -std=c11 -Wall -Wextra -O2 -g
 
-LDFLAGS    += $(PORT_LIBS)
+LDFLAGS    += $(PORT_LIBS) -Wl,--allow-undefined
 
 all: $(ELF)
 
