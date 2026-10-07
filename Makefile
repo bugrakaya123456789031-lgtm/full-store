@@ -21,7 +21,7 @@ OBJS       := $(CPP_SRC:$(SRCDIR)/%.cpp=$(BUILDDIR)/%.o) \
               $(C_SRC:$(SRCDIR)/%.c=$(BUILDDIR)/%.o)
 
 PORT_LIBS  := -L$(PS5_SYSROOT)/user/homebrew/lib \
-              -lcurl -lmbedtls -lmbedx509 -lmbedcrypto \
+              -lcurl \
               -larchive -lz -lbz2 -llzma -lzstd \
               -lSDL2 -lSDL2_ttf -lSDL2_image -lfreetype -lpng -ljpeg
 

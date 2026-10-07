@@ -47,7 +47,7 @@ jobs:
           echo "=== Available headers ===" >> make.log
           ls /opt/ps5-payload-sdk/target/user/homebrew/include/ 2>&1 | tee -a make.log || true
           echo "=== Available libs ===" >> make.log
-          ls /opt/ps5-payload-sdk/target/user/homebrew/lib/*.a 2>&1 | tee -a make.log || true
+          find /opt/ps5-payload-sdk/target/user/homebrew/lib -name '*.a' 2>&1 | sort | tee -a make.log || true
 
       - name: Compile full-store.elf
         run: |
