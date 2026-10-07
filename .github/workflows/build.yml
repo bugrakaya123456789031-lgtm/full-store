@@ -44,27 +44,31 @@ jobs:
           wget -q https://github.com/ps5-payload-dev/pacbrew-repo/releases/download/v0.40.3/ps5-payload-dev.tar.gz -O /tmp/ports.tar.gz
           sudo tar -xzf /tmp/ports.tar.gz -C /
           sudo chmod -R +x /opt/ps5-payload-sdk/bin || true
-          ls -la /opt/ps5-payload-sdk/target/user/homebrew/include || true
+          echo "=== Available headers ===" >> make.log
+          ls /opt/ps5-payload-sdk/target/user/homebrew/include/ 2>&1 | tee -a make.log || true
+          echo "=== Available libs ===" >> make.log
+          ls /opt/ps5-payload-sdk/target/user/homebrew/lib/*.a 2>&1 | tee -a make.log || true
 
       - name: Compile full-store.elf
         run: |
           export PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk
           export PATH=/opt/ps5-payload-sdk/bin:$PATH
-          make -j$(nproc) > make.log 2>&1 || true
+          make -j$(nproc) >> make.log 2>&1 || true
           cat make.log
           if [ ! -f full-store.elf ]; then
             exit 1
           fi
 
-      - name: Publish log to branch
+      - name: Publish log to main
         if: always()
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -B build-logs
-          git add -f make.log
-          git commit -m "build log [skip ci]" || true
-          git push -f origin build-logs || true
+          mkdir -p logs
+          cp make.log logs/latest.log
+          git add logs/latest.log
+          git commit -m "ci: update build log [skip ci]" || true
+          git push origin HEAD:main || true
 
       - name: Upload Build Log
         if: always()
@@ -79,4 +83,3 @@ jobs:
         with:
           name: full-store-elf
           path: full-store.elf
-
