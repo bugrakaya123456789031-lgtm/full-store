@@ -1,0 +1,93 @@
+  CXX   src/resolvers/mediafire.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/mediafire.o src/resolvers/mediafire.cpp
+  CXX   src/resolvers/gofile.cpp
+  CXX   src/resolvers/pixeldrain.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/gofile.o src/resolvers/gofile.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/pixeldrain.o src/resolvers/pixeldrain.cpp
+  CXX   src/resolvers/buzzheavier.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/buzzheavier.o src/resolvers/buzzheavier.cpp
+  CXX   src/resolvers/direct.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/direct.o src/resolvers/direct.cpp
+  CXX   src/resolvers/onefichier.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/onefichier.o src/resolvers/onefichier.cpp
+  CXX   src/imgui_demo.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_demo.o src/imgui_demo.cpp
+  CXX   src/resolver.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolver.o src/resolver.cpp
+src/resolver.cpp:26:10: warning: unused function 'contains' [-Wunused-function]
+   26 |     bool contains(const std::string& h, const char* n) {
+      |          ^~~~~~~~
+  CXX   src/ui.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/ui.o src/ui.cpp
+1 warning generated.
+  CXX   src/extractor.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/extractor.o src/extractor.cpp
+  CXX   src/imgui_impl_sdlrenderer2.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_impl_sdlrenderer2.o src/imgui_impl_sdlrenderer2.cpp
+  CXX   src/logger.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/logger.o src/logger.cpp
+src/ui.cpp:455:1: error: reference to 'UiCtx' is ambiguous
+  455 | UiCtx* init(SDL_Window* window, SDL_Renderer* renderer) {
+      | ^
+  CXX   src/imgui_widgets.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_widgets.o src/imgui_widgets.cpp
+include/ui.h:8:8: note: candidate found by name lookup is 'fs_ui::UiCtx'
+    8 | struct UiCtx; // opaque
+      |        ^
+src/ui.cpp:157:8: note: candidate found by name lookup is 'fs_ui::(anonymous namespace)::UiCtx'
+  157 | struct UiCtx {
+      |        ^
+src/ui.cpp:455:8: error: functions that differ only in their return type cannot be overloaded
+  455 | UiCtx* init(SDL_Window* window, SDL_Renderer* renderer) {
+      | ~~~~~~ ^
+include/ui.h:10:8: note: previous declaration is here
+   10 | UiCtx* init(SDL_Window* window, SDL_Renderer* renderer);
+      | ~~~~~~ ^
+src/ui.cpp:474:19: error: reference to 'UiCtx' is ambiguous
+  474 |     auto* u = new UiCtx();
+      |                   ^
+include/ui.h:8:8: note: candidate found by name lookup is 'fs_ui::UiCtx'
+    8 | struct UiCtx; // opaque
+      |        ^
+src/ui.cpp:157:8: note: candidate found by name lookup is 'fs_ui::(anonymous namespace)::UiCtx'
+  157 | struct UiCtx {
+      |        ^
+src/ui.cpp:479:15: error: reference to 'UiCtx' is ambiguous
+  479 | void shutdown(UiCtx* u) {
+      |               ^
+include/ui.h:8:8: note: candidate found by name lookup is 'fs_ui::UiCtx'
+    8 | struct UiCtx; // opaque
+      |        ^
+src/ui.cpp:157:8: note: candidate found by name lookup is 'fs_ui::(anonymous namespace)::UiCtx'
+  157 | struct UiCtx {
+      |        ^
+src/ui.cpp:479:15: error: reference to 'UiCtx' is ambiguous
+  479 | void shutdown(UiCtx* u) {
+      |               ^
+include/ui.h:8:8: note: candidate found by name lookup is 'fs_ui::UiCtx'
+    8 | struct UiCtx; // opaque
+      |        ^
+src/ui.cpp:157:8: note: candidate found by name lookup is 'fs_ui::(anonymous namespace)::UiCtx'
+  157 | struct UiCtx {
+      |        ^
+src/ui.cpp:489:12: error: reference to 'UiCtx' is ambiguous
+  489 | bool frame(UiCtx* u, SDL_Window* window, SDL_Renderer* renderer) {
+      |            ^
+include/ui.h:8:8: note: candidate found by name lookup is 'fs_ui::UiCtx'
+    8 | struct UiCtx; // opaque
+      |        ^
+src/ui.cpp:157:8: note: candidate found by name lookup is 'fs_ui::(anonymous namespace)::UiCtx'
+  157 | struct UiCtx {
+      |        ^
+src/ui.cpp:489:12: error: reference to 'UiCtx' is ambiguous
+  489 | bool frame(UiCtx* u, SDL_Window* window, SDL_Renderer* renderer) {
+      |            ^
+include/ui.h:8:8: note: candidate found by name lookup is 'fs_ui::UiCtx'
+    8 | struct UiCtx; // opaque
+      |        ^
+src/ui.cpp:157:8: note: candidate found by name lookup is 'fs_ui::(anonymous namespace)::UiCtx'
+  157 | struct UiCtx {
+      |        ^
+7 errors generated.
+make: *** [Makefile:49: build/ui.o] Error 1
+make: *** Waiting for unfinished jobs....
