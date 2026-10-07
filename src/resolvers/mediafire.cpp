@@ -14,13 +14,13 @@ std::optional<Resolved> resolve(const std::string& page_url) {
     if (!page.ok()) return std::nullopt;
 
     static const std::regex re(
-        R"(id="downloadButton"[^>]*href="(https?://[^"]+mediafire\.com/[^"]+)")",
+        R"re(id="downloadButton"[^>]*href="(https?://[^"]+mediafire\.com/[^"]+)")re",
         std::regex::icase);
     std::smatch m;
     if (!std::regex_search(page.body, m, re)) {
         // Alt: aria-label with download URL
         static const std::regex re2(
-            R"(href="(https?://download[0-9]+\.mediafire\.com/[^"]+)")",
+            R"re(href="(https?://download[0-9]+\.mediafire\.com/[^"]+)")re",
             std::regex::icase);
         if (!std::regex_search(page.body, m, re2)) return std::nullopt;
     }

@@ -24,8 +24,8 @@ std::optional<Resolved> resolve(const std::string& page_url) {
     std::string info = "https://pixeldrain.com/api/file/" + id + "/info";
     auto resp = fs_net::get(info);
     if (resp.ok()) {
-        static const std::regex rn(R"("name"\s*:\s*"([^"]+)")");
-        static const std::regex rs(R"("size"\s*:\s*(\d+))");
+        static const std::regex rn(R"re("name"\s*:\s*"([^"]+)")re");
+        static const std::regex rs(R"re("size"\s*:\s*(\d+))re");
         std::smatch mm;
         if (std::regex_search(resp.body, mm, rn)) r.suggested_filename = mm[1].str();
         if (std::regex_search(resp.body, mm, rs))

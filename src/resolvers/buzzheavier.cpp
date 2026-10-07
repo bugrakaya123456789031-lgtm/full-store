@@ -36,7 +36,7 @@ std::optional<Resolved> resolve(const std::string& page_url) {
         r.direct_url = redirect;
     } else {
         // Fallback: scan body for data-url or source URL.
-        static const std::regex rd(R"(data-url="([^"]+)")");
+        static const std::regex rd(R"re(data-url="([^"]+)")re");
         std::smatch dm;
         if (std::regex_search(resp.body, dm, rd)) r.direct_url = dm[1].str();
     }

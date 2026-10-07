@@ -153,7 +153,7 @@ std::string region_from(const std::string& s) {
 
 std::string version_from(const std::string& s) {
     // match "v1.07", "v10.00", "1.07.00"
-    static const std::regex re(R"((?:v|version[\s:]*)\s*(\d+\.\d+(?:\.\d+)?))",
+    static const std::regex re(R"re((?:v|version[\s:]*)\s*(\d+\.\d+(?:\.\d+)?))re",
                                std::regex::icase);
     std::smatch m;
     if (std::regex_search(s, m, re)) return "v" + m[1].str();
@@ -194,16 +194,16 @@ CategoryPage fetch_category(int page) {
     //   <article class="post" ...> ... </article>
     // Fallback: look for h2.entry-title > a.
     static const std::regex re_article(
-        R"(<article\b[^>]*>([\s\S]*?)</article>)",
+        R"re(<article\b[^>]*>([\s\S]*?)</article>)re",
         std::regex::icase);
     static const std::regex re_title(
-        R"(<h[123][^>]*class="[^"]*(?:entry-title|post-title)[^"]*"[^>]*>\s*<a\s+[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>)",
+        R"re(<h[123][^>]*class="[^"]*(?:entry-title|post-title)[^"]*"[^>]*>\s*<a\s+[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>)re",
         std::regex::icase);
     static const std::regex re_cover(
-        R"(<img\b[^>]*src="([^"]+)"[^>]*>)",
+        R"re(<img\b[^>]*src="([^"]+)"[^>]*>)re",
         std::regex::icase);
     static const std::regex re_meta(
-        R"(<p[^>]*class="[^"]*(?:entry-meta|post-meta|excerpt)[^"]*"[^>]*>([\s\S]*?)</p>)",
+        R"re(<p[^>]*class="[^"]*(?:entry-meta|post-meta|excerpt)[^"]*"[^>]*>([\s\S]*?)</p>)re",
         std::regex::icase);
 
     std::unordered_set<std::string> seen;
@@ -220,7 +220,7 @@ CategoryPage fetch_category(int page) {
         } else {
             // Fallback: any anchor with href containing the base + title attr.
             static const std::regex re_any_link(
-                R"(<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>)",
+                R"re(<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>)re",
                 std::regex::icase);
             if (std::regex_search(blk, m, re_any_link)) {
                 e.page_url = m[1].str();
@@ -253,7 +253,7 @@ CategoryPage fetch_category(int page) {
 
     // Pagination hint.
     static const std::regex re_last(
-        R"(page/(\d+)/[^"]*"\s*(?:class="[^"]*(?:last|page-numbers)[^"]*")?)",
+        R"re(page/(\d+)/[^"]*"\s*(?:class="[^"]*(?:last|page-numbers)[^"]*")?)re",
         std::regex::icase);
     int max_seen = page;
     for (auto it = std::sregex_iterator(r.body.begin(), r.body.end(), re_last);
@@ -281,7 +281,7 @@ GameDetail fetch_detail(const GameEntry& e) {
 
     // Description paragraph.
     static const std::regex re_desc(
-        R"(<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>([\s\S]*?)</div>)",
+        R"re(<div[^>]*class="[^"]*entry-content[^"]*"[^>]*>([\s\S]*?)</div>)re",
         std::regex::icase);
     std::smatch dm;
     std::string body_region = r.body;
@@ -292,7 +292,7 @@ GameDetail fetch_detail(const GameEntry& e) {
 
     // All anchors in the content region.
     static const std::regex re_anchor(
-        R"(<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>)",
+        R"re(<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)</a>)re",
         std::regex::icase);
 
     std::unordered_set<std::string> seen_url;
@@ -321,7 +321,7 @@ GameDetail fetch_detail(const GameEntry& e) {
 
     // Guess part_index / part_total from labels.
     static const std::regex re_part(
-        R"(part\s*(\d+)(?:\s*(?:of|/)\s*(\d+))?)",
+        R"re(part\s*(\d+)(?:\s*(?:of|/)\s*(\d+))?)re",
         std::regex::icase);
     for (auto& dl : gd.links) {
         std::smatch pm;

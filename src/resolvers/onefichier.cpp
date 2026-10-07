@@ -24,7 +24,7 @@ std::optional<Resolved> resolve(const std::string& page_url) {
 
     // The page's download form posts to itself with the "dl" button.
     // The result is a redirect to a direct URL on cdn-X.1fichier.com.
-    static const std::regex rh(R"(href="(https?://[a-z0-9\.-]*1fichier\.com/[^"]+)")");
+    static const std::regex rh(R"re(href="(https?://[a-z0-9\.-]*1fichier\.com/[^"]+)")re");
     std::smatch m;
     if (std::regex_search(page.body, m, rh)) {
         Resolved r;
@@ -35,7 +35,7 @@ std::optional<Resolved> resolve(const std::string& page_url) {
     }
 
     // Fallback: look for the <input name="adz" value="..."> and POST.
-    static const std::regex ra(R"(name="adz"\s+value="([^"]+)")");
+    static const std::regex ra(R"re(name="adz"\s+value="([^"]+)")re");
     std::smatch am;
     if (std::regex_search(page.body, am, ra)) {
         // libcurl POST — reuse GET with a tiny workaround: we only expose GET,

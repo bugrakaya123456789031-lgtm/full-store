@@ -14,7 +14,7 @@ namespace {
 std::string create_guest_token() {
     auto r = fs_net::get("https://api.gofile.io/accounts", {{"Content-Type","application/json"}});
     if (!r.ok()) return "";
-    static const std::regex rt(R"("token"\s*:\s*"([^"]+)")");
+    static const std::regex rt(R"re("token"\s*:\s*"([^"]+)")re");
     std::smatch m;
     if (std::regex_search(r.body, m, rt)) return m[1].str();
     return "";
@@ -23,7 +23,7 @@ std::string create_guest_token() {
 } // anon
 
 std::optional<Resolved> resolve(const std::string& page_url) {
-    static const std::regex ri(R"(gofile\.io/d/([A-Za-z0-9]+))", std::regex::icase);
+    static const std::regex ri(R"re(gofile\.io/d/([A-Za-z0-9]+))re", std::regex::icase);
     std::smatch m;
     if (!std::regex_search(page_url, m, ri)) return std::nullopt;
     std::string id = m[1].str();
@@ -39,7 +39,7 @@ std::optional<Resolved> resolve(const std::string& page_url) {
     auto r = fs_net::get(api, h);
     if (!r.ok()) return std::nullopt;
 
-    static const std::regex rl(R"("link"\s*:\s*"([^"]+)")");
+    static const std::regex rl(R"re("link"\s*:\s*"([^"]+)")re");
     std::smatch mm;
     if (!std::regex_search(r.body, mm, rl)) return std::nullopt;
 

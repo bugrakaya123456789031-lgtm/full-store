@@ -1,0 +1,5 @@
+build/
+*.o
+*.elf
+ps5-payload-sdk/
+.vscode/
