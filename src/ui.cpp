@@ -152,6 +152,8 @@ struct DetailCache {
     }
 };
 
+} // anon (helper structs)
+
 // --- Context -------------------------------------------------------------
 
 struct UiCtx {
@@ -168,6 +170,8 @@ struct UiCtx {
     char tmp_install[512] = {0};
     bool settings_loaded_fields = false;
 };
+
+namespace {
 
 // --- Tabs ----------------------------------------------------------------
 
@@ -450,7 +454,7 @@ void draw_settings(UiCtx* u) {
     }
 }
 
-} // anon
+} // anon (draw helpers)
 
 UiCtx* init(SDL_Window* window, SDL_Renderer* renderer) {
     IMGUI_CHECKVERSION();
