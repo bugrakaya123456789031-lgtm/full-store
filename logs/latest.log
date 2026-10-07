@@ -343,23 +343,23 @@ zstd_errors.h
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/mediafire.o src/resolvers/mediafire.cpp
   CXX   src/resolvers/gofile.cpp
   CXX   src/resolvers/pixeldrain.cpp
+  CXX   src/resolvers/buzzheavier.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/gofile.o src/resolvers/gofile.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/pixeldrain.o src/resolvers/pixeldrain.cpp
-  CXX   src/resolvers/buzzheavier.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/buzzheavier.o src/resolvers/buzzheavier.cpp
   CXX   src/resolvers/direct.cpp
-  CXX   src/resolvers/onefichier.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/direct.o src/resolvers/direct.cpp
+  CXX   src/resolvers/onefichier.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/onefichier.o src/resolvers/onefichier.cpp
-  CXX   src/resolver.cpp
-/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolver.o src/resolver.cpp
   CXX   src/imgui_demo.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_demo.o src/imgui_demo.cpp
-  CXX   src/ui.cpp
-/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/ui.o src/ui.cpp
+  CXX   src/resolver.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolver.o src/resolver.cpp
 src/resolver.cpp:26:10: warning: unused function 'contains' [-Wunused-function]
    26 |     bool contains(const std::string& h, const char* n) {
       |          ^~~~~~~~
+  CXX   src/ui.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/ui.o src/ui.cpp
 1 warning generated.
   CXX   src/extractor.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/extractor.o src/extractor.cpp
@@ -377,11 +377,11 @@ src/resolver.cpp:26:10: warning: unused function 'contains' [-Wunused-function]
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/scraper.o src/scraper.cpp
   CXX   src/imgui.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui.o src/imgui.cpp
-  CXX   src/http_client.cpp
-/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/http_client.o src/http_client.cpp
 src/scraper.cpp:40:6: warning: unused function 'contains_ci' [-Wunused-function]
    40 | bool contains_ci(const std::string& hay, const char* needle) {
       |      ^~~~~~~~~~~
+  CXX   src/http_client.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/http_client.o src/http_client.cpp
 src/http_client.cpp:35:8: warning: unused function 'write_fd' [-Wunused-function]
    35 | size_t write_fd(char* ptr, size_t sz, size_t nm, void* ud) {
       |        ^~~~~~~~
@@ -390,112 +390,15 @@ src/http_client.cpp:35:8: warning: unused function 'write_fd' [-Wunused-function
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/main.o src/main.cpp
   CXX   src/installer.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/installer.o src/installer.cpp
+1 warning generated.
   CXX   src/download_manager.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/download_manager.o src/download_manager.cpp
-1 warning generated.
   CXX   src/imgui_impl_sdl2.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_impl_sdl2.o src/imgui_impl_sdl2.cpp
   CXX   src/imgui_draw.cpp
 /opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_draw.o src/imgui_draw.cpp
   LD    full-store.elf
-/opt/ps5-payload-sdk/bin/prospero-clang++ -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -o full-store.elf build/resolvers/mediafire.o build/resolvers/gofile.o build/resolvers/pixeldrain.o build/resolvers/buzzheavier.o build/resolvers/direct.o build/resolvers/onefichier.o build/imgui_demo.o build/resolver.o build/ui.o build/extractor.o build/imgui_impl_sdlrenderer2.o build/logger.o build/imgui_widgets.o build/settings.o build/imgui_tables.o build/scraper.o build/imgui.o build/http_client.o build/main.o build/installer.o build/download_manager.o build/imgui_impl_sdl2.o build/imgui_draw.o -L/opt/ps5-payload-sdk/target/user/homebrew/lib -lcurl -larchive -lz -lbz2 -llzma -lzstd -lSDL2 -lSDL2_ttf -lSDL2_image -lfreetype -lpng -ljpeg
-ld.lld: error: undefined symbol: sceAudioOutInit
->>> referenced by SDL_ps5audio.c
->>>               SDL_ps5audio.c.o:(PS5AUDIO_Init) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceAudioOutOpen
->>> referenced by SDL_ps5audio.c
->>>               SDL_ps5audio.c.o:(PS5AUDIO_OpenDevice) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceAudioOutOutput
->>> referenced by SDL_ps5audio.c
->>>               SDL_ps5audio.c.o:(PS5AUDIO_PlayDevice) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceAudioOutClose
->>> referenced by SDL_ps5audio.c
->>>               SDL_ps5audio.c.o:(PS5AUDIO_CloseDevice) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: WebPGetFeaturesInternal
->>> referenced by IMG_webp.c:206 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:206)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBP_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
->>> referenced by IMG_webp.c:301 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:301)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBPAnimation_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
-
-ld.lld: error: undefined symbol: WebPDecodeRGBAInto
->>> referenced by IMG_webp.c:224 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:224)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBP_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
->>> referenced by IMG_webp.c:334 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:334)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBPAnimation_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
-
-ld.lld: error: undefined symbol: WebPDecodeRGBInto
->>> referenced by IMG_webp.c:226 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:226)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBP_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
->>> referenced by IMG_webp.c:341 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:341)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBPAnimation_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
-
-ld.lld: error: undefined symbol: WebPDemuxInternal
->>> referenced by IMG_webp.c:314 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:314)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBPAnimation_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
-
-ld.lld: error: undefined symbol: WebPDemuxGetI
->>> referenced by IMG_webp.c:318 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:318)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBPAnimation_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
-
-ld.lld: error: undefined symbol: WebPDemuxGetFrame
->>> referenced by IMG_webp.c:323 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:323)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBPAnimation_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
-
-ld.lld: error: undefined symbol: WebPDemuxDelete
->>> referenced by IMG_webp.c:352 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:352)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBPAnimation_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
->>> referenced by IMG_webp.c:364 (/home/runner/work/pacbrew-repo/pacbrew-repo/SDL2_image/src/SDL2_image-2.8.2/src/IMG_webp.c:364)
->>>               libSDL2_image_la-IMG_webp.o:(IMG_LoadWEBPAnimation_RW) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
-
-ld.lld: error: undefined symbol: sceUserServiceInitialize
->>> referenced by SDL_sysurl.c
->>>               SDL_sysurl.c.o:(SDL_SYS_OpenURL) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
->>> referenced by SDL_ps5keyboard.c
->>>               SDL_ps5keyboard.c.o:(PS5_Keyboard_Init) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
->>> referenced by SDL_ps5joystick.c
->>>               SDL_ps5joystick.c.o:(PS5_JoystickInit) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
->>> referenced 1 more times
-
-ld.lld: error: undefined symbol: sceSystemServiceLaunchWebBrowser
->>> referenced by SDL_sysurl.c
->>>               SDL_sysurl.c.o:(SDL_SYS_OpenURL) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceUserServiceGetForegroundUser
->>> referenced by SDL_ps5keyboard.c
->>>               SDL_ps5keyboard.c.o:(PS5_Keyboard_Open) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
->>> referenced by SDL_sysfilesystem.c
->>>               SDL_sysfilesystem.c.o:(SDL_GetPrefPath_REAL) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceKeyboardOpen
->>> referenced by SDL_ps5keyboard.c
->>>               SDL_ps5keyboard.c.o:(PS5_Keyboard_Open) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceKeyboardClose
->>> referenced by SDL_ps5keyboard.c
->>>               SDL_ps5keyboard.c.o:(PS5_Keyboard_Close) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceKeyboardInit
->>> referenced by SDL_ps5keyboard.c
->>>               SDL_ps5keyboard.c.o:(PS5_Keyboard_Init) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceSystemServiceHideSplashScreen
->>> referenced by SDL_ps5video.c
->>>               SDL_ps5video.c.o:(PS5_VideoInit) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceVideoOutOpen
->>> referenced by SDL_ps5video.c
->>>               SDL_ps5video.c.o:(PS5_VideoInit) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
->>> referenced by SDL_ps5video.c
->>>               SDL_ps5video.c.o:(PS5_SetDisplayMode) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: undefined symbol: sceImeDialogGetStatus
->>> referenced by SDL_ps5keyboard.c
->>>               SDL_ps5keyboard.c.o:(PS5_Keyboard_PumpEvents) in archive /opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
-
-ld.lld: error: too many errors emitted, stopping now (use --error-limit=0 to see all errors)
+/opt/ps5-payload-sdk/bin/prospero-clang++ -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -o full-store.elf build/resolvers/mediafire.o build/resolvers/gofile.o build/resolvers/pixeldrain.o build/resolvers/buzzheavier.o build/resolvers/direct.o build/resolvers/onefichier.o build/imgui_demo.o build/resolver.o build/ui.o build/extractor.o build/imgui_impl_sdlrenderer2.o build/logger.o build/imgui_widgets.o build/settings.o build/imgui_tables.o build/scraper.o build/imgui.o build/http_client.o build/main.o build/installer.o build/download_manager.o build/imgui_impl_sdl2.o build/imgui_draw.o -L/opt/ps5-payload-sdk/target/user/homebrew/lib -lcurl -larchive -lz -lbz2 -llzma -lzstd -lSDL2 -lSDL2_ttf -lSDL2_image -lfreetype -lpng -ljpeg -Wl,--allow-undefined
+ld.lld: error: unknown argument '--allow-undefined'
 clang++: error: linker command failed with exit code 1 (use -v to see invocation)
 make: *** [Makefile:44: full-store.elf] Error 1
