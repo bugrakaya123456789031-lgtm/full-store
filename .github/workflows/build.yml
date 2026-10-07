@@ -15,34 +15,34 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install dependencies
+      - name: Install build tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y bash git cmake ninja-build clang-18 lld-18 make python3 python3-pyelftools wget xz-utils pkg-config sudo unzip libssl-dev
+          sudo apt-get install -y bash git clang-18 lld-18 make wget tar unzip
           sudo ln -sf /usr/bin/clang-18 /usr/bin/clang
           sudo ln -sf /usr/bin/clang++-18 /usr/bin/clang++
 
-      - name: Install ps5-payload-sdk
+      - name: Setup prebuilt PS5 Payload SDK
         run: |
-          git clone --recursive https://github.com/ps5-payload-dev/sdk /opt/ps5-payload-sdk
-          cd /opt/ps5-payload-sdk
-          make -j$(nproc)
-          sudo make install
+          sudo mkdir -p /opt/ps5-payload-sdk
+          wget -q https://github.com/ps5-payload-dev/sdk/releases/download/v0.43/ps5-payload-sdk.zip -O /tmp/sdk.zip
+          sudo unzip -q /tmp/sdk.zip -d /tmp/sdk_extracted
+          if [ -d "/tmp/sdk_extracted/ps5-payload-sdk" ]; then
+            sudo cp -r /tmp/sdk_extracted/ps5-payload-sdk/* /opt/ps5-payload-sdk/
+          else
+            sudo cp -r /tmp/sdk_extracted/* /opt/ps5-payload-sdk/
+          fi
           echo "PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk" >> $GITHUB_ENV
 
-      - name: Install Pacbrew ports
+      - name: Setup Pacbrew port libraries
         run: |
-          export PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk
-          export PATH=$PATH:$PS5_PAYLOAD_SDK/bin
-          if command -v pacbrew-pm &> /dev/null; then
-            pacbrew-pm install curl mbedtls zlib libarchive sdl2 sdl2_image sdl2_ttf freetype
-          elif [ -f "$PS5_PAYLOAD_SDK/bin/pacbrew-pm" ]; then
-            $PS5_PAYLOAD_SDK/bin/pacbrew-pm install curl mbedtls zlib libarchive sdl2 sdl2_image sdl2_ttf freetype
-          fi
+          wget -q https://github.com/ps5-payload-dev/pacbrew-repo/releases/download/v0.40.3/ps5-payload-dev.tar.gz -O /tmp/ports.tar.gz
+          sudo tar -xzf /tmp/ports.tar.gz -C /opt/ps5-payload-sdk/ || true
 
-      - name: Build full-store.elf
+      - name: Compile full-store.elf
         run: |
           export PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk
+          export PATH=$PATH:/opt/ps5-payload-sdk/bin
           make -j$(nproc)
 
       - name: Upload ELF Artifact
