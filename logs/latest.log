@@ -1,0 +1,405 @@
+=== Available headers ===
+AL
+FLAC
+FLAC++
+GL
+KHR
+RmlUi
+SDL2
+aarch64_fpmath.h
+amd64_fpmath.h
+archive.h
+archive_entry.h
+ass
+b64
+bsd_asm.h
+bsd_cdefs.h
+bsd_fpu.h
+bsd_ieeefp.h
+bzlib.h
+cdefs-compat.h
+curl
+dht
+enet
+evdns.h
+event.h
+event2
+evhttp.h
+evrpc.h
+evutil.h
+expat.h
+expat_config.h
+expat_external.h
+faad.h
+fast_float
+fmt
+fmt123.h
+fontconfig
+fpmath.h
+freetype2
+fribidi
+gif_lib.h
+glm
+harfbuzz
+i386_fpmath.h
+iconv.h
+imconfig.h
+imgui.h
+imgui_impl_sdl2.h
+imgui_impl_sdlrenderer2.h
+imgui_internal.h
+imgui_stdlib.h
+imstb_rectpack.h
+imstb_textedit.h
+imstb_truetype.h
+jansson.h
+jansson_config.h
+jconfig.h
+jerror.h
+jmorecfg.h
+jpeglib.h
+json-c
+k_log.h
+k_logf.h
+kitchensink2
+lame
+lauxlib.h
+libavcodec
+libavdevice
+libavfilter
+libavformat
+libavutil
+libcharset.h
+libconfig.h
+libconfig.h++
+libdeflate.h
+libmodplug
+libpng16
+libpostproc
+libpsl.h
+libssh
+libssh2.h
+libssh2_publickey.h
+libssh2_sftp.h
+libswresample
+libswscale
+libutp
+libxml2
+llvm
+llvm-c
+localcharset.h
+loongarch64_fpmath.h
+lua.h
+lua.hpp
+luaconf.h
+luajit-2.1
+lualib.h
+lzma
+lzma.h
+mad.h
+magic.h
+math_private.h
+math_private_openbsd.h
+microdns
+microhttpd.h
+miniupnpc
+minizip
+mips_fpmath.h
+mpeg2dec
+mpg123.h
+natpmp.h
+natpmp_declspec.h
+neaacdec.h
+nfsc
+ogg
+openlibm.h
+openlibm_complex.h
+openlibm_defs.h
+openlibm_fenv.h
+openlibm_fenv_aarch64.h
+openlibm_fenv_amd64.h
+openlibm_fenv_arm.h
+openlibm_fenv_i387.h
+openlibm_fenv_loongarch64.h
+openlibm_fenv_mips.h
+openlibm_fenv_powerpc.h
+openlibm_fenv_riscv.h
+openlibm_fenv_s390.h
+openlibm_math.h
+openssl
+opus
+png.h
+pngconf.h
+pnglibconf.h
+powerpc_fpmath.h
+quickjs
+riscv_fpmath.h
+s390_fpmath.h
+samplerate.h
+smb2
+sndfile.h
+sndfile.hh
+sodium
+sodium.h
+sqlite3.h
+theora
+tinyxml2.h
+turbojpeg.h
+types-compat.h
+vorbis
+vpx
+webp
+x264.h
+x264_config.h
+zconf.h
+zdict.h
+zlib.h
+zstd.h
+zstd_errors.h
+=== Available libs ===
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libFLAC.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMAggressiveInstCombine.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMAnalysis.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMAsmParser.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMAsmPrinter.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMBinaryFormat.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMBitReader.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMBitWriter.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMBitstreamReader.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMCFGuard.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMCodeGen.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMCore.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMCoroutines.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMCoverage.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDWARFLinker.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDWP.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDebugInfoCodeView.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDebugInfoDWARF.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDebugInfoGSYM.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDebugInfoMSF.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDebugInfoPDB.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDebuginfod.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDemangle.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMDlltoolDriver.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMExecutionEngine.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMExtensions.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMFileCheck.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMFrontendOpenACC.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMFrontendOpenMP.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMFuzzMutate.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMGlobalISel.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMIRReader.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMInstCombine.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMInstrumentation.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMInterfaceStub.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMInterpreter.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMJITLink.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMLTO.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMLibDriver.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMLineEditor.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMLinker.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMMC.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMMCA.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMMCDisassembler.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMMCJIT.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMMCParser.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMMIRParser.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMObjCARCOpts.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMObject.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMObjectYAML.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMOption.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMOrcJIT.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMOrcShared.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMOrcTargetProcess.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMPasses.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMProfileData.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMRemarks.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMRuntimeDyld.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMScalarOpts.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMSelectionDAG.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMSupport.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMSymbolize.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMTableGen.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMTableGenGlobalISel.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMTarget.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMTextAPI.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMTransformUtils.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMVectorize.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMWindowsManifest.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMX86AsmParser.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMX86CodeGen.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMX86Desc.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMX86Disassembler.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMX86Info.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMX86TargetMCA.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMXRay.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libLLVMipo.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_gfx.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_image.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_mixer.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_net.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_test.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2_ttf.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL2main.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL_kitchensink.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libSDL_kitchensink_static.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libarchive.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libass.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libavcodec.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libavdevice.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libavfilter.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libavformat.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libavutil.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libb64.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libbz2.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libcharset.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libconfig++.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libconfig.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libcrypto.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libcurl.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libdeflate.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libdht.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libenet.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libevent.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libevent_core.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libevent_extra.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libevent_pthreads.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libexpat.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libfaad.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libfaad_drm.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libfmt.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libfontconfig.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libfreetype.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libfribidi.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libgif.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libglm.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libharfbuzz-subset.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libharfbuzz.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libiconv.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libimgui.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libjansson.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libjpeg.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libjson-c.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/liblove.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/liblua.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libluajit-5.1.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/liblzma.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libm.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmad.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmagic.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmicrodns.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmicrohttpd.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libminiupnpc.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libminizip.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmodplug.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmp3lame.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmpeg2.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmpeg2convert.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libmpg123.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libnatpmp.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libnfs.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libogg.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libopenal.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libopenlibm.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libopus.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libpng.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libpng16.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libpostproc.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libpsl.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/librmlui.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/librmlui_debugger.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/librmlui_lua.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libsamplerate.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libsharpyuv.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libsmb2.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libsndfile.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libsodium.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libsqlite3.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libssh.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libssh2.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libssl.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libswresample.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libswscale.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libtheora.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libtheoradec.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libtheoraenc.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libtinyxml2.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libturbojpeg.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libutp.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libvorbis.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libvorbisenc.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libvorbisfile.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libvpx.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libwebp.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libwebpdemux.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libwebpmux.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libx264.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libxml2.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libz.a
+/opt/ps5-payload-sdk/target/user/homebrew/lib/libzstd.a
+  CXX   src/resolvers/gofile.cpp
+  CXX   src/resolvers/mediafire.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/mediafire.o src/resolvers/mediafire.cpp
+  CXX   src/resolvers/pixeldrain.cpp
+  CXX   src/resolvers/buzzheavier.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/gofile.o src/resolvers/gofile.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/pixeldrain.o src/resolvers/pixeldrain.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/buzzheavier.o src/resolvers/buzzheavier.cpp
+  CXX   src/resolvers/direct.cpp
+  CXX   src/resolvers/onefichier.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/direct.o src/resolvers/direct.cpp
+  CXX   src/imgui_demo.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolvers/onefichier.o src/resolvers/onefichier.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_demo.o src/imgui_demo.cpp
+  CXX   src/resolver.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/resolver.o src/resolver.cpp
+src/resolver.cpp:26:10: warning: unused function 'contains' [-Wunused-function]
+   26 |     bool contains(const std::string& h, const char* n) {
+      |          ^~~~~~~~
+  CXX   src/ui.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/ui.o src/ui.cpp
+1 warning generated.
+  CXX   src/extractor.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/extractor.o src/extractor.cpp
+  CXX   src/imgui_impl_sdlrenderer2.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_impl_sdlrenderer2.o src/imgui_impl_sdlrenderer2.cpp
+  CXX   src/logger.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/logger.o src/logger.cpp
+  CXX   src/imgui_widgets.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_widgets.o src/imgui_widgets.cpp
+  CXX   src/settings.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/settings.o src/settings.cpp
+  CXX   src/imgui_tables.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_tables.o src/imgui_tables.cpp
+  CXX   src/scraper.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/scraper.o src/scraper.cpp
+  CXX   src/imgui.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui.o src/imgui.cpp
+src/scraper.cpp:40:6: warning: unused function 'contains_ci' [-Wunused-function]
+   40 | bool contains_ci(const std::string& hay, const char* needle) {
+      |      ^~~~~~~~~~~
+  CXX   src/http_client.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/http_client.o src/http_client.cpp
+src/http_client.cpp:35:8: warning: unused function 'write_fd' [-Wunused-function]
+   35 | size_t write_fd(char* ptr, size_t sz, size_t nm, void* ud) {
+      |        ^~~~~~~~
+1 warning generated.
+  CXX   src/main.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/main.o src/main.cpp
+  CXX   src/installer.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/installer.o src/installer.cpp
+  CXX   src/download_manager.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/download_manager.o src/download_manager.cpp
+1 warning generated.
+  CXX   src/imgui_impl_sdl2.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_impl_sdl2.o src/imgui_impl_sdl2.cpp
+  CXX   src/imgui_draw.cpp
+/opt/ps5-payload-sdk/bin/prospero-clang++ -Iinclude -Isrc -I/opt/ps5-payload-sdk/target/user/homebrew/include -I/opt/ps5-payload-sdk/target/user/homebrew/include/SDL2 -DAPP_NAME='"FULL STORE"' -DAPP_VERSION='"1.0.0"' -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -c -o build/imgui_draw.o src/imgui_draw.cpp
+  LD    full-store.elf
+/opt/ps5-payload-sdk/bin/prospero-clang++ -std=c++17 -Wall -Wextra -Wno-unused-parameter -O2 -g -o full-store.elf build/resolvers/mediafire.o build/resolvers/gofile.o build/resolvers/pixeldrain.o build/resolvers/buzzheavier.o build/resolvers/direct.o build/resolvers/onefichier.o build/imgui_demo.o build/resolver.o build/ui.o build/extractor.o build/imgui_impl_sdlrenderer2.o build/logger.o build/imgui_widgets.o build/settings.o build/imgui_tables.o build/scraper.o build/imgui.o build/http_client.o build/main.o build/installer.o build/download_manager.o build/imgui_impl_sdl2.o build/imgui_draw.o -L/opt/ps5-payload-sdk/target/user/homebrew/lib -lcurl -lmbedtls -lmbedx509 -lmbedcrypto -larchive -lz -lbz2 -llzma -lzstd -lSDL2 -lSDL2_ttf -lSDL2_image -lfreetype -lpng -ljpeg
+ld.lld: error: unable to find library -lmbedtls
+ld.lld: error: unable to find library -lmbedx509
+ld.lld: error: unable to find library -lmbedcrypto
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:44: full-store.elf] Error 1
