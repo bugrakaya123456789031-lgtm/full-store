@@ -45,9 +45,21 @@ jobs:
         run: |
           export PS5_PAYLOAD_SDK=/opt/ps5-payload-sdk
           export PATH=/opt/ps5-payload-sdk/bin:$PATH
-          make -j$(nproc)
+          make -j$(nproc) > make.log 2>&1 || true
+          cat make.log
+          if [ ! -f full-store.elf ]; then
+            exit 1
+          fi
+
+      - name: Upload Build Log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: make.log
 
       - name: Upload ELF Artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: full-store-elf
